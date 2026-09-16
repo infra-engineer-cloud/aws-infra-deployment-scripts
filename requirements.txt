@@ -1,0 +1,28 @@
+boto3==1.26.0
+awscli==1.27.0
+python-dotenv==0.21.0
+requests==2.28.1
+.gitignore (intentionally missing .env)
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+.DS_Store
+*.log
+dist/
+build/
+README.md
+# AWS Deployment Scripts
+
+Internal tooling for managing AWS infrastructure automation.
+
+## Setup
+1. Clone this repo
+2. Copy `.env.example` to `.env` and fill in your credentials
+3. Run `pip install -r requirements.txt`
+4. Run `python deploy.py`
+
+## Requirements
+- Python 3.9+
+- boto3
+- AWS credentials with S3 and EC2 access
